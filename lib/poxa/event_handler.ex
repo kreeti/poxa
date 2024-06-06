@@ -65,9 +65,7 @@ defmodule Poxa.EventHandler do
   """
   def valid_entity_length(req, %{event: event} = state) do
     {:ok, payload_limit} = Application.fetch_env(:poxa, :payload_limit)
-    {:ok, encoded_event_data} = Jason.encode(event.data)
-
-    valid = byte_size(encoded_event_data) <= payload_limit
+    valid = byte_size(event.data) <= payload_limit
 
     req =
       if valid do
