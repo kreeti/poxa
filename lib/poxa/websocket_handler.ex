@@ -36,7 +36,7 @@ defmodule Poxa.WebsocketHandler do
   def websocket_init(req) do
     app_key = :cowboy_req.binding(:app_key, req)
     qs_vals = :cowboy_req.parse_qs(req)
-    {"protocol", protocol} = List.keyfind(qs_vals, "protocol", 0, to_string(@max_protocol))
+    {"protocol", protocol} = List.keyfind(qs_vals, "protocol", 0, {"protocol", to_string(@max_protocol)})
 
     case :application.get_env(:poxa, :app_key) do
       {:ok, ^app_key} ->
