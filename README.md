@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/edgurgel/poxa.svg?branch=master)](https://travis-ci.org/edgurgel/poxa)
 [![Inline docs](http://inch-ci.org/github/edgurgel/poxa.svg?branch=master)](http://inch-ci.org/github/edgurgel/poxa)
 [![Release](http://img.shields.io/github/release/edgurgel/poxa.svg)](https://github.com/edgurgel/poxa/releases/latest)
 [![Docker](https://img.shields.io/docker/pulls/edgurgel/poxa-automated.svg)](https://hub.docker.com/r/edgurgel/poxa-automated)
@@ -29,7 +28,7 @@ How do I speak 'poxa'?
 
 Poxa is a standalone elixir server implementation of the Pusher protocol.
 
-You need [Elixir](http://elixir-lang.org) 1.9 at least and Erlang 21.0
+You need [Elixir](http://elixir-lang.org) 1.16 at least and Erlang 26.0
 
 Clone this repository
 
@@ -98,7 +97,7 @@ var pusher = new Pusher(APP_KEY, {
 });
 ```
 
-A working poxa is on http://poxa.herokuapp.com, with:
+A working poxa is on https://poxa.onrender.com/, with:
 
 * App key: "app_key"
 * App id: "app_id"
@@ -113,7 +112,7 @@ A simple console is available on index:
 
 ![Console](http://i.imgur.com/zEbZZgN.png)
 
-You can see it in action on http://poxa.herokuapp.com using "app_key" and "secret" to connect. Now open the [poxa-presence-chat](http://poxa-presence-chat.herokuapp.com) and watch events happening!
+You can see it in action on [http://poxa.herokuapp.com](https://poxa.onrender.com/) using "app_key" and "secret" to connect. Now open the [poxa-presence-chat](http://poxa-presence-chat.herokuapp.com) and watch events happening!
 
 ## Implementation
 
